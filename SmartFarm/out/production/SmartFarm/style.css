@@ -1,0 +1,156 @@
+/* === 全局 === */
+.root {
+    -fx-font-family: "Microsoft YaHei", "SimHei", "PingFang SC", sans-serif;
+    -fx-background-color: #f0ebe0;
+    -fx-accent: #4a7c59;
+}
+
+/* === 顶栏 === */
+.status-bar {
+    -fx-background-color: linear-gradient(to bottom, #558b6a, #3d6b4e);
+    -fx-padding: 10 16;
+    -fx-spacing: 14;
+    -fx-alignment: center-left;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0, 0, 2);
+}
+.status-label {
+    -fx-text-fill: rgba(255,255,255,0.85);
+    -fx-font-size: 13px;
+}
+.status-value {
+    -fx-text-fill: #f5e6c8;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+/* === 内容面板 === */
+.content-panel {
+    -fx-padding: 12;
+    -fx-spacing: 12;
+    -fx-background-color: #f5f1e8;
+}
+.section-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #3d6b4e;
+    -fx-padding: 4 0 3 4;
+    -fx-border-color: transparent transparent #d4c9a8 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+
+/* === 列表 === */
+.farm-list {
+    -fx-background-color: white;
+    -fx-border-color: #d4c9a8;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-pref-height: 140;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 3, 0, 0, 1);
+}
+.farm-list .list-cell {
+    -fx-padding: 5 10;
+    -fx-font-size: 12px;
+    -fx-border-color: transparent transparent #f0ebe0 transparent;
+    -fx-border-width: 0 0 1 0;
+}
+.farm-list .list-cell:odd {
+    -fx-background-color: #faf7ee;
+}
+.farm-list .list-cell:selected {
+    -fx-background-color: #c8e0d0;
+    -fx-text-fill: #2d4a3a;
+}
+.farm-list .list-cell:hover {
+    -fx-background-color: #e8f0ec;
+}
+
+/* === 消息日志 === */
+.log-area {
+    -fx-background-color: #1e2a24;
+    -fx-text-fill: #a8d8b8;
+    -fx-font-family: "JetBrains Mono", "Consolas", "Source Code Pro", monospace;
+    -fx-font-size: 12px;
+    -fx-control-inner-background: #1e2a24;
+    -fx-highlight-fill: #4a7c59;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-effect: innershadow(gaussian, rgba(0,0,0,0.3), 4, 0, 0, 0);
+}
+.log-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+.log-area .content {
+    -fx-background-color: #1e2a24;
+}
+
+/* === 按钮 === */
+.action-btn {
+    -fx-background-color: linear-gradient(to bottom, #5a9a6a, #4a7c59);
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 9 14;
+    -fx-background-radius: 7;
+    -fx-cursor: hand;
+    -fx-min-width: 80;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.12), 3, 0, 0, 1);
+}
+.action-btn:hover {
+    -fx-background-color: linear-gradient(to bottom, #4a8a5a, #3d6b4e);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 5, 0, 0, 2);
+}
+.action-btn:pressed {
+    -fx-background-color: linear-gradient(to bottom, #3d6b4e, #2d5a3e);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 1, 0, 0, 0);
+}
+.action-btn-danger {
+    -fx-background-color: linear-gradient(to bottom, #d45040, #b84030);
+}
+.action-btn-danger:hover {
+    -fx-background-color: linear-gradient(to bottom, #c04030, #a83020);
+}
+.action-btn-special {
+    -fx-background-color: linear-gradient(to bottom, #e0b030, #c89820);
+}
+.action-btn-special:hover {
+    -fx-background-color: linear-gradient(to bottom, #d0a020, #b88810);
+}
+
+/* === 按钮区域 === */
+.button-grid {
+    -fx-background-color: #e8e0cc;
+    -fx-padding: 10;
+    -fx-hgap: 8;
+    -fx-vgap: 6;
+    -fx-border-color: #d4c9a8 transparent transparent transparent;
+    -fx-border-width: 1 0 0 0;
+}
+
+/* === 仓库标签 === */
+.warehouse-label {
+    -fx-background-color: white;
+    -fx-border-color: #d4c9a8;
+    -fx-border-radius: 6;
+    -fx-background-radius: 6;
+    -fx-padding: 8 12;
+    -fx-font-size: 12px;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 3, 0, 0, 1);
+}
+
+/* === 对话框自定义 === */
+.dialog-pane {
+    -fx-background-color: #f5f1e8;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+.dialog-pane .header-panel {
+    -fx-background-color: #4a7c59;
+    -fx-background-radius: 8 8 0 0;
+    -fx-padding: 12 16;
+}
+.dialog-pane .header-panel .label {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
